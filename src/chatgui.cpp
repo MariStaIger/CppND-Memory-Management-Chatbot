@@ -123,7 +123,7 @@ ChatBotPanelDialog::ChatBotPanelDialog(wxWindow *parent, wxWindowID id)
     // Task1: create chat logic instance
     //_chatLogic = new ChatLogic(); 
     _chatLogic = std::make_unique<ChatLogic>(); 
-    std::cout << "Object _chatlogic is created with address " << _chatLogic.get() << " and " << std::endl;
+    std::cout << "Object _chatlogic is created with address " << _chatLogic.get() << std::endl;
 
     // pass pointer to chatbot dialog so answers can be displayed in GUI
     _chatLogic->SetPanelDialogHandle(this);
