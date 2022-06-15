@@ -14,14 +14,15 @@ class GraphNode;
 class ChatLogic
 {
 private:
-    //// STUDENT CODE TASK 3
+    //// STUDENT CODE TASK 3 + 4
     ////
 
     // data handles (owned)
     // Exclusive ownwership by changing instances into unique_ptr
     std::vector<std::unique_ptr<GraphNode>> _nodes;
-    std::vector<GraphEdge *> _edges;
-
+    
+    //std::vector<GraphEdge *> _edges;
+    //std::vector<std::unique_ptr<GraphEdge>> _edges;
     ////
     //// EOF STUDENT CODE
 
